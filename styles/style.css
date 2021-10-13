@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+  --clr-main: hsl(218, 22%, 67%);
+  --clr-primary: hsl(204, 43%, 93%);
+  --clr-secondary: hsl(179, 62%, 43%);
+  --clr-tertiary: hsl(71, 73%, 54%);
+}
+
+/*=============================================
+=                  Global Styles              =
+=============================================*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 90%;
+  max-width: 645px;
+  border-radius: 5px;
+  overflow: hidden;
+  line-height: 1.5;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*=====  End of Global Styles  ======*/
+
+.wrapper {
+  min-height: 100%;
+  background: var(--clr-primary);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  padding: 2em 1em;
+  background: #fff;
+}
+
+.title {
+  font-weight: 700;
+  color: var(--clr-secondary);
+  margin-bottom: 1em;
+}
+
+.notice {
+  margin-bottom: 1em;
+  color: var(--clr-tertiary);
+  font-weight: 700;
+  font-size: 1.1em;
+}
+
+.desc {
+  color: var(--clr-main);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.payment {
+  padding: 2em 1em;
+  background: var(--clr-secondary);
+  color: #fff;
+}
+
+.container-title {
+  margin-bottom: 1em;
+  font-size: 1.25em;
+  font-weight: 400;
+}
+
+.price-container {
+  display: flex;
+  align-items: center;
+}
+
+.price {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.monthly {
+  margin-left: 1em;
+  font-weight: 400;
+
+  color: #ddd8;
+  font-size: 1em;
+}
+
+.payment-desc {
+  margin-bottom: 2em;
+}
+
+.btn {
+  width: 100%;
+  padding-block: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--clr-tertiary);
+  border-radius: 5px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.about-us {
+  padding: 2em 1em;
+  color: #fff;
+  background: var(--clr-secondary);
+  filter: brightness(105%);
+}
+
+.link a {
+  color: var(--clr-primary);
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 0.9em;
+}
+
+.attribution {
+  margin-top: 2em;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--clr-secondary);
+}
+
+@media only screen and (min-width: 650px) {
+  .content,
+  .payment,
+  .about-us {
+    padding: 2em;
+  }
+}
